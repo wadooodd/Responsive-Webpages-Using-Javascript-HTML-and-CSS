@@ -108,7 +108,7 @@ function add_row()
 }
 
 //************** index javascript code ********************
-
+//****
 function enlarge(x) {
     x.style.height = "auto";
     x.style.width = "60%";
