@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="mytimetable.css">
+    <script src="script.js"></script>
+    <meta charset="utf-8">
+    <title>My TimeTable</title>
+    
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="index.html" target="_blank">Home</a>
+      <a href="coursevideos.html" target="_blank">Videos</a>
+      <input type="text" id="myInput" onkeyup="searchTable()" placeholder="Search...">
+  </div>
+
+  
+  
+  
+
+    <table class="center" id="myTable">
+      <tr>
+        <td id="DS">DS-N</td>
+        <th><pre>8:30-9:50</pre></th>
+        <th><pre>10:00-11:20</pre></th>
+        <th><pre>11:30-12:50</pre></th>
+        <th><pre>1:00-2:20</pre></th>
+        <th><pre>2:30-3:50</pre></th>
+        <th><pre>3:55-5:15</pre></th>
+        
+      </tr>
+      <tr id="row1">
+        <th>Monday</th>
+        <td id="1row1"></td>
+        <td id="2row1"></td>
+        <td id="3row1">Data Mining<br><br>(C-311)</td>
+        <td id="4row1">PDC<br><br>(C-311)</td>
+        <td id="5row1"></td>
+        <td id="6row1">COAL<br><br>(C-304)</td>
+
+        <td>
+          <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+          <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+          <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+        </td>
+       
+      </tr>
+
+      <tr id="row2">
+        <th>Tuesday</th>
+        <td id="1row2"></td>
+        <td id="2row2"></td>
+        <td id="3row2"></td>
+        <td id="4row2">Web Programming<br><br>(C-309)</td>
+        <td id="5row2"></td>
+        <td id="6row2"></td>
+        
+        <td>
+          <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+          <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+          <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+        </td>
+
+      </tr>
+
+      <tr id="row3">
+        <th>Wednesday</th>
+        <td id="1row3"></td>
+        <td id="2row3">Data Mining<br><br>(A-316)</td>
+        <td id="3row3"></td>
+        <td id="4row3">PDC<br><br>(C-311)</td>
+        <td id="5row3">Artificial Intelligence<br><br>(A-303)</td>
+        <td id="6row3">COAL<br><br>(A-303)</td>
+
+        <td>
+          <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+          <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+          <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+        </td>
+
+      </tr>
+
+      <tr id="row4">
+        <th>Thursday</th>
+        <td id="1row4" colspan="2">Data Mining Lab<br><br>Margalla-4</td>
+        <td id="2row4"></td>
+        <td id="3row4">Web Programming<br><br>(C-407)</td>
+        <td id="4row4"></td>
+        <td id="5row4">Artificial Intelligence<br><br>(C-301)</td>
+        <td class="none" id="6row4"></td>
+        
+        <td>
+          <input type="button" id="edit_button4" value="Edit" class="edit" onclick="edit_row('4')">
+          <input type="button" id="save_button4" value="Save" class="save" onclick="save_row('4')">
+          <input type="button" value="Delete" class="delete" onclick="delete_row('4')">
+          </td>
+
+      </tr>
+
+      <tr id="row5">
+        <th>Friday</th>
+        <td id="1row5" colspan="2">AI Lab<br><br>GPU</td>
+        <td id="2row5"></td>
+        <td id="3row5"></td>
+        <td id="4row5" colspan="2">COAL Lab<br><br>Rawal-4</td>
+        <td class="none" id="5row5"></td>
+        <td class="none" id="6row5"></td>
+        
+        <td>
+          <input type="button" id="edit_button5" value="Edit" class="edit" onclick="edit_row('5')">
+          <input type="button" id="save_button5" value="Save" class="save" onclick="save_row('5')">
+          <input type="button" value="Delete" class="delete" onclick="delete_row('5')">
+          </td>
+        
+      </tr>
+
+      <tr>
+        <td id="newhead"><input type="text" id="newcol1"></td>
+        <td><input type="text" id="newcol2"></td>
+        <td><input type="text" id="newcol3"></td>
+        <td><input type="text" id="newcol4"></td>
+        <td><input type="text" id="newcol5"></td>
+        <td><input type="text" id="newcol6"></td>
+        <td><input type="text" id="newcol7"></td>
+        <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+        </tr>
+
+    </table>
+
+    <footer>
+      <p>Created by Ahmed Wadood. © 2022</p>
+    </footer>
+  </body>
+</html>
+
